@@ -36,7 +36,7 @@ export default function CarSalePage() {
       name: "Ford Ranger Wildtrak",
       year: 2023,
       price: 60000,
-      image: "/images/ford-ranger.jpeg",
+      image: "/images/ford-ranger.jpg",
       features: ["Powerful Engine", "Off-road Capability", "Premium Interior", "Advanced Technology"],
       description: "Top-of-the-line pickup with exceptional performance",
     },
@@ -146,7 +146,7 @@ export default function CarSalePage() {
           <div className="bg-white rounded-lg shadow-xl overflow-hidden border border-gray-200 max-w-5xl mx-auto">
             <div className="flex flex-col md:flex-row">
               <div className="md:w-1/2 relative h-[300px] md:h-auto">
-                <Image src="/images/ford-ranger.jpeg" alt="Ford Ranger Wildtrak" fill className="object-cover" />
+                <Image src="/images/ford-ranger.jpg" alt="Ford Ranger Wildtrak" fill className="object-cover" />
               </div>
               <div className="md:w-1/2 p-8">
                 <div className="flex justify-between items-start">
@@ -235,12 +235,26 @@ export default function CarSalePage() {
                     </ul>
                   </div>
                   <div className="flex space-x-2">
-                    <button className="flex-1 bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded-md transition duration-300">
-                      View Details
-                    </button>
-                    <button className="flex-1 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-md transition duration-300">
-                      Inquire Now
-                    </button>
+                    
+                    <a
+                      href="https://wa.me/263781216414"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="flex-1 bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded-md transition duration-300">
+                        View Details
+                      </button>
+                    </a>
+                    <a
+                      href="https://wa.me/263781216414"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="flex-1 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-md transition duration-300">
+                        Inquire Now
+                      </button>
+                    </a>
+
                   </div>
                 </div>
               </div>
@@ -256,9 +270,16 @@ export default function CarSalePage() {
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Contact our team and let us help you find the perfect vehicle that meets your needs and budget.
           </p>
-          <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-flex items-center">
-            Contact Us <ChevronRight className="ml-2 h-5 w-5" />
-          </button>
+          
+          <a
+                      href="https://wa.me/263781216414"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-flex items-center">
+                        Contact Us <ChevronRight className="ml-2 h-5 w-5" />
+                      </button>
+            </a>
         </div>
       </section>
     </div>

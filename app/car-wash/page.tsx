@@ -6,17 +6,18 @@ export default function CarWashPage() {
     {
       id: 1,
       name: "Basic Wash",
-      price: 15,
+      price: 7,
       description: "Quick exterior wash to keep your car clean",
       features: ["Exterior Wash", "Wheel Cleaning", "Tire Shine", "Hand Dry"],
     },
     {
       id: 2,
       name: "Premium Wash",
-      price: 25,
+      price: 15,
       description: "Comprehensive wash with added protection",
       features: [
         "Everything in Basic Wash",
+        "Buffing",
         "Wax Protection",
         "Undercarriage Wash",
         "Triple Foam Polish",
@@ -27,10 +28,11 @@ export default function CarWashPage() {
     {
       id: 3,
       name: "Deluxe Detail",
-      price: 45,
+      price: 40,
       description: "Complete interior and exterior cleaning",
       features: [
         "Everything in Premium Wash",
+        "Full Vallet",
         "Interior Vacuum",
         "Dashboard & Console Cleaning",
         "Leather Conditioning",
@@ -45,7 +47,7 @@ export default function CarWashPage() {
       {/* Hero Section */}
       <section className="relative h-[50vh] bg-gradient-to-r from-gray-900 to-gray-800 flex items-center">
         <div className="absolute inset-0 opacity-30">
-          <img src="/placeholder.svg?height=600&width=1200" alt="Car Wash" className="w-full h-full object-cover" />
+          <img src="/images/carwash_slider.jpg" alt="Car Wash" className="w-full h-full object-cover" />
         </div>
         <div className="container mx-auto px-6 relative z-10">
           <h1 className="text-5xl font-bold text-white mb-4">Professional Car Wash</h1>
@@ -86,11 +88,19 @@ export default function CarWashPage() {
                       ))}
                     </ul>
                   </div>
+                  <a
+                    href="https://wa.me/263781216414"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                   <button
                     className={`w-full ${pkg.popular ? "bg-green-600 hover:bg-green-700" : "bg-gray-800 hover:bg-gray-900"} text-white font-bold py-3 px-4 rounded-md transition duration-300`}
                   >
                     Choose Package
                   </button>
+                  </a>
+
+                  
                 </div>
               </div>
             ))}
@@ -169,7 +179,7 @@ export default function CarWashPage() {
               <div className="flex items-center mb-4">
                 <div className="h-12 w-12 rounded-full bg-gray-300 mr-4"></div>
                 <div>
-                  <h4 className="font-bold">Sarah Williams</h4>
+                  <h4 className="font-bold">Tadiwa Tawonameso</h4>
                   <div className="flex text-yellow-400">
                     <span>★</span>
                     <span>★</span>
@@ -189,7 +199,7 @@ export default function CarWashPage() {
               <div className="flex items-center mb-4">
                 <div className="h-12 w-12 rounded-full bg-gray-300 mr-4"></div>
                 <div>
-                  <h4 className="font-bold">David Thompson</h4>
+                  <h4 className="font-bold">Renny K</h4>
                   <div className="flex text-yellow-400">
                     <span>★</span>
                     <span>★</span>
@@ -216,12 +226,25 @@ export default function CarWashPage() {
             Visit us today or schedule an appointment for your car wash service.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="bg-white text-green-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full transition duration-300 inline-flex items-center justify-center">
-              Schedule Now <ChevronRight className="ml-2 h-5 w-5" />
-            </button>
+            <a
+                    href="https://wa.me/263781216414"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                  <button className="bg-white text-green-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full transition duration-300 inline-flex items-center justify-center">
+                        Schedule Now <ChevronRight className="ml-2 h-5 w-5" />
+                  </button>
+                  </a>
+            
+            <a
+              href="https://maps.app.goo.gl/FAthMzwAQLayLbkW9"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
             <button className="border-2 border-white text-white hover:bg-white hover:text-green-600 font-bold py-3 px-8 rounded-full transition duration-300 inline-flex items-center justify-center">
               View Location
             </button>
+            </a>
           </div>
         </div>
       </section>

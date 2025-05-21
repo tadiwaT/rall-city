@@ -39,15 +39,11 @@ export default function Navbar() {
             <Link href="/car-wash" className="text-gray-800 hover:text-green-600 transition duration-300">
               Car Wash
             </Link>
-            <Link href="/car-rental" className="text-gray-800 hover:text-green-600 transition duration-300">
-              Car Rental
-            </Link>
+            
             <Link href="/car-hire" className="text-gray-800 hover:text-green-600 transition duration-300">
               Car Hire
             </Link>
-            <Link href="/auction" className="text-gray-800 hover:text-green-600 transition duration-300">
-              Auction
-            </Link>
+            
             <Link
               href="/contact"
               className="bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-full transition duration-300"
@@ -89,13 +85,7 @@ export default function Navbar() {
               >
                 Car Wash
               </Link>
-              <Link
-                href="/car-rental"
-                className="text-gray-800 hover:text-green-600 transition duration-300"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Car Rental
-              </Link>
+              
               <Link
                 href="/car-hire"
                 className="text-gray-800 hover:text-green-600 transition duration-300"
@@ -103,13 +93,7 @@ export default function Navbar() {
               >
                 Car Hire
               </Link>
-              <Link
-                href="/auction"
-                className="text-gray-800 hover:text-green-600 transition duration-300"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Auction
-              </Link>
+              
               <Link
                 href="/contact"
                 className="bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-full transition duration-300 inline-block"

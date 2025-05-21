@@ -75,21 +75,13 @@ export default function Footer() {
                   Car Wash
                 </Link>
               </li>
-              <li>
-                <Link href="/car-rental" className="text-gray-400 hover:text-white transition duration-300">
-                  Car Rental
-                </Link>
-              </li>
+              
               <li>
                 <Link href="/car-hire" className="text-gray-400 hover:text-white transition duration-300">
                   Car Hire
                 </Link>
               </li>
-              <li>
-                <Link href="/auction" className="text-gray-400 hover:text-white transition duration-300">
-                  Auction
-                </Link>
-              </li>
+              
             </ul>
           </div>
 
@@ -103,18 +95,18 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 text-gray-400" />
-                <span className="text-gray-400">+1 (555) 123-4567</span>
+                <span className="text-gray-400">+ (263) 7812-16414</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 text-gray-400" />
-                <span className="text-gray-400">info@rallcityauto.com</span>
+                <span className="text-gray-400">info@rallcityauto.co.zw</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} RallCity AutoTraders. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} RallCity AutoTraders. All rights reserved. Designed By TadiwaT</p>
         </div>
       </div>
     </footer>

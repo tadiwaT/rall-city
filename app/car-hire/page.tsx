@@ -5,22 +5,22 @@ export default function CarHirePage() {
   const hireVehicles = [
     {
       id: 1,
-      name: "Executive Sedan",
-      price: 120,
-      image: "/placeholder.svg?height=300&width=500",
+      name: "Toyota Cross",
+      price: 100,
+      image: "/images/toyota-cross1.jpeg",
       passengers: 3,
-      description: "Luxury sedan with professional chauffeur for business travel and airport transfers.",
-      features: ["Professional Driver", "Leather Interior", "Climate Control", "Bottled Water", "Wi-Fi"],
+      description: "Luxury toyota with professional chauffeur for business travel and airport transfers.",
+      features: ["Leather Interior", "Climate Control", "Bottled Water", "Wi-Fi"],
     },
     {
       id: 2,
-      name: "Luxury SUV",
-      price: 180,
-      image: "/placeholder.svg?height=300&width=500",
+      name: "Land Cruiser",
+      price: 120,
+      image: "/images/land-cruiser.jpeg",
       passengers: 6,
-      description: "Spacious luxury SUV with chauffeur for group travel and special occasions.",
+      description: "Spacious luxury Land Cruiser with chauffeur for group travel and special occasions.",
       features: [
-        "Professional Driver",
+        
         "Leather Interior",
         "Climate Control",
         "Bottled Water",
@@ -30,13 +30,13 @@ export default function CarHirePage() {
     },
     {
       id: 3,
-      name: "Stretch Limousine",
-      price: 250,
-      image: "/placeholder.svg?height=300&width=500",
+      name: "Toyota Fortuner GD6",
+      price: 150,
+      image: "/images/toyota-gd6.jpg",
       passengers: 8,
       description: "Classic stretch limousine for weddings, proms, and special celebrations.",
       features: [
-        "Professional Driver",
+
         "Luxury Interior",
         "Climate Control",
         "Complimentary Drinks",
@@ -46,12 +46,12 @@ export default function CarHirePage() {
     },
     {
       id: 4,
-      name: "Premium Van",
-      price: 150,
-      image: "/placeholder.svg?height=300&width=500",
+      name: "RAV 4",
+      price: 60,
+      image: "/images/RAV4.jpg",
       passengers: 12,
       description: "Comfortable van with driver for group transportation and airport shuttles.",
-      features: ["Professional Driver", "Comfortable Seating", "Climate Control", "Bottled Water", "Luggage Space"],
+      features: ["Comfortable Seating", "Climate Control", "Bottled Water", "Luggage Space"],
     },
   ]
 
@@ -60,7 +60,7 @@ export default function CarHirePage() {
       {/* Hero Section */}
       <section className="relative h-[50vh] bg-gradient-to-r from-gray-900 to-gray-800 flex items-center">
         <div className="absolute inset-0 opacity-30">
-          <img src="/placeholder.svg?height=600&width=1200" alt="Car Hire" className="w-full h-full object-cover" />
+          <img src="/images/carental.jpg" alt="Car Hire" className="w-full h-full object-cover" />
         </div>
         <div className="container mx-auto px-6 relative z-10">
           <h1 className="text-5xl font-bold text-white mb-4">Chauffeur Car Hire</h1>
@@ -176,10 +176,16 @@ export default function CarHirePage() {
                       ))}
                     </ul>
                   </div>
-
-                  <button className="w-full bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded-md transition duration-300">
-                    Book This Vehicle
-                  </button>
+                    <a
+                    href="https://wa.me/+263781216414"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                    <button className="w-full bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded-md transition duration-300">
+                      Book This Vehicle
+                    </button>
+                    </a>
+                  
                 </div>
               </div>
             ))}
@@ -293,9 +299,16 @@ export default function CarHirePage() {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Book your chauffeur-driven vehicle today for a luxurious and stress-free travel experience.
           </p>
-          <button className="bg-white text-green-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full transition duration-300 inline-flex items-center">
-            Book Now <ChevronRight className="ml-2 h-5 w-5" />
-          </button>
+          <a
+                    href="https://wa.me/+263781216414"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                  <button className="bg-white text-green-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full transition duration-300 inline-flex items-center">
+                    Book Now <ChevronRight className="ml-2 h-5 w-5" />
+                  </button>
+          </a>
+          
         </div>
       </section>
     </div>

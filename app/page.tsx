@@ -18,7 +18,7 @@ export default function Home() {
       name: "Ford Ranger Wildtrak",
       year: 2023,
       price: 60000,
-      image: "/images/ford-ranger.jpeg",
+      image: "/images/ford-ranger.jpg",
       category: "Pickup",
     },
     {
@@ -36,7 +36,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[70vh] bg-gradient-to-r from-gray-900 to-gray-800 flex items-center">
         <div className="absolute inset-0 opacity-70">
-          <Image src="/images/slider1.png" alt="RallCity AutoTraders Banner" fill className="object-cover" priority />
+          <Image src="/images/carslider.jpg" alt="RallCity AutoTraders Banner" fill className="object-cover" priority />
         </div>
         <div className="container mx-auto px-6 relative z-10">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">RallCity AutoTraders</h1>
@@ -135,7 +135,7 @@ export default function Home() {
             <Link href="/car-wash" className="group">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
                 <div className="h-48 bg-gray-200 relative overflow-hidden">
-                  <Image src="/images/ford-ranger.jpeg" alt="Car Wash" fill className="object-cover" />
+                  <Image src="/images/carwash_slider.jpg" alt="Car Wash" fill className="object-cover" />
                   <div className="absolute inset-0 bg-black bg-opacity-30"></div>
                 </div>
                 <div className="p-6">
@@ -153,7 +153,7 @@ export default function Home() {
             </Link>
 
             {/* Car Rental */}
-            <Link href="/car-rental" className="group">
+            
               <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
                 <div className="h-48 bg-gray-200 relative overflow-hidden">
                   <Image src="/images/nissan-note.jpeg" alt="Car Rental" fill className="object-cover" />
@@ -170,7 +170,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </Link>
+            
 
             {/* Car Hire */}
             <Link href="/car-hire" className="group">
@@ -193,7 +193,7 @@ export default function Home() {
             </Link>
 
             {/* Auction */}
-            <Link href="/auction" className="group">
+            
               <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
                 <div className="h-48 bg-gray-200 relative overflow-hidden">
                   <Image src="/images/land-cruiser.jpeg" alt="Car Auction" fill className="object-cover" />
@@ -211,7 +211,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </Link>
+            
 
             {/* Contact Us */}
             <Link href="/contact" className="group">
@@ -287,7 +287,7 @@ export default function Home() {
               <div className="flex items-center mb-4">
                 <div className="h-12 w-12 rounded-full bg-gray-300 mr-4"></div>
                 <div>
-                  <h4 className="font-bold">Sarah Johnson</h4>
+                  <h4 className="font-bold">Tadiwa Tawonameso</h4>
                   <p className="text-gray-600 text-sm">Regular Customer</p>
                 </div>
               </div>
@@ -301,7 +301,7 @@ export default function Home() {
               <div className="flex items-center mb-4">
                 <div className="h-12 w-12 rounded-full bg-gray-300 mr-4"></div>
                 <div>
-                  <h4 className="font-bold">Michael Brown</h4>
+                  <h4 className="font-bold">Renny Brown</h4>
                   <p className="text-gray-600 text-sm">Business Client</p>
                 </div>
               </div>

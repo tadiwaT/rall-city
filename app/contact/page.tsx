@@ -7,7 +7,7 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="relative h-[40vh] bg-gradient-to-r from-gray-900 to-gray-800 flex items-center">
         <div className="absolute inset-0 opacity-50">
-          <Image src="/images/slider1.png" alt="Contact Us" fill className="object-cover" priority />
+          <Image src="/images/carsale.jpg" alt="Contact Us" fill className="object-cover" priority />
         </div>
         <div className="container mx-auto px-6 relative z-10">
           <h1 className="text-5xl font-bold text-white mb-4">Contact Us</h1>
@@ -57,7 +57,7 @@ export default function ContactPage() {
                     type="tel"
                     id="phone"
                     className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600"
-                    placeholder="(123) 456-7890"
+                    placeholder="(263) 7812-16414"
                   />
                 </div>
                 <div>
@@ -71,7 +71,7 @@ export default function ContactPage() {
                     <option value="">Select a subject</option>
                     <option value="car-sale">Car Sale Inquiry</option>
                     <option value="car-wash">Car Wash Services</option>
-                    <option value="car-rental">Car Rental</option>
+                    
                     <option value="car-hire">Car Hire</option>
                     <option value="auction">Auction Information</option>
                     <option value="other">Other</option>
@@ -118,9 +118,9 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-bold text-lg mb-1">Phone Number</h3>
                       <p className="text-gray-600">
-                        Main: +1 (555) 123-4567
+                        Main: +263 781-216-414
                         <br />
-                        Support: +1 (555) 987-6543
+                        Support: +263 772-318-505
                       </p>
                     </div>
                   </div>
@@ -129,9 +129,9 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-bold text-lg mb-1">Email Address</h3>
                       <p className="text-gray-600">
-                        info@rallcityauto.com
+                        info@rallcityauto.co.zw
                         <br />
-                        support@rallcityauto.com
+                        support@rallcityauto.co.zw
                       </p>
                     </div>
                   </div>
