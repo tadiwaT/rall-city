@@ -88,12 +88,19 @@ export default function ContactPage() {
                     placeholder="How can we help you?"
                   ></textarea>
                 </div>
+                <a
+                href={`https://wa.me/+263772318505`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-block"
+              >
                 <button
-                  type="submit"
+                  type="button"
                   className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-md transition duration-300 flex items-center"
                 >
                   Send Message <Send className="ml-2 h-5 w-5" />
                 </button>
+                </a>
               </form>
             </div>
 

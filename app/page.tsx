@@ -309,11 +309,11 @@ export default function Home() {
         <div className="flex items-center mb-4">
           <img
             src="/images/team-3.jpg" // Replace with the actual image path
-            alt="Renny Brown"
+            alt="Ronny Brown"
             className="h-12 w-12 rounded-full mr-4"
           />
           <div>
-            <h4 className="font-bold">Renny Brown</h4>
+            <h4 className="font-bold">Ronny Brown</h4>
             <p className="text-gray-600 text-sm">Business Client</p>
           </div>
         </div>
