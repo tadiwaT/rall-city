@@ -36,7 +36,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[70vh] bg-gradient-to-r from-gray-900 to-gray-800 flex items-center">
         <div className="absolute inset-0 opacity-70">
-          <Image src="/images/carslider.jpg" alt="RallCity AutoTraders Banner" fill className="object-cover" priority />
+          <Image src="/images/slider1.png" alt="RallCity AutoTraders Banner" fill className="object-cover" priority />
         </div>
         <div className="container mx-auto px-6 relative z-10">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">RallCity AutoTraders</h1>
@@ -264,55 +264,68 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 bg-gray-100">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16 text-gray-800">What Our Customers Say</h2>
+<section className="py-20 bg-gray-100">
+  <div className="container mx-auto px-6">
+    <h2 className="text-4xl font-bold text-center mb-16 text-gray-800">What Our Customers Say</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="flex items-center mb-4">
-                <div className="h-12 w-12 rounded-full bg-gray-300 mr-4"></div>
-                <div>
-                  <h4 className="font-bold">John Smith</h4>
-                  <p className="text-gray-600 text-sm">Car Buyer</p>
-                </div>
-              </div>
-              <p className="text-gray-600">
-                "The car buying process was smooth and transparent. I got a great deal on my new vehicle and the staff
-                was incredibly helpful."
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="flex items-center mb-4">
-                <div className="h-12 w-12 rounded-full bg-gray-300 mr-4"></div>
-                <div>
-                  <h4 className="font-bold">Tadiwa Tawonameso</h4>
-                  <p className="text-gray-600 text-sm">Regular Customer</p>
-                </div>
-              </div>
-              <p className="text-gray-600">
-                "I've been using their car wash services for years. They always do an exceptional job and my car looks
-                brand new every time."
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="flex items-center mb-4">
-                <div className="h-12 w-12 rounded-full bg-gray-300 mr-4"></div>
-                <div>
-                  <h4 className="font-bold">Renny Brown</h4>
-                  <p className="text-gray-600 text-sm">Business Client</p>
-                </div>
-              </div>
-              <p className="text-gray-600">
-                "Their car hire service is top-notch. Professional drivers, immaculate vehicles, and always on time.
-                Perfect for our corporate events."
-              </p>
-            </div>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="bg-white p-8 rounded-lg shadow-md">
+        <div className="flex items-center mb-4">
+          <img
+            src="/images/team-2.jpg" // Replace with the actual image path
+            alt="John Smith"
+            className="h-12 w-12 rounded-full mr-4"
+          />
+          <div>
+            <h4 className="font-bold">John Smith</h4>
+            <p className="text-gray-600 text-sm">Car Buyer</p>
           </div>
         </div>
-      </section>
+        <p className="text-gray-600">
+          "The car buying process was smooth and transparent. I got a great deal on my new vehicle and the staff
+          was incredibly helpful."
+        </p>
+      </div>
+
+      <div className="bg-white p-8 rounded-lg shadow-md">
+        <div className="flex items-center mb-4">
+          <img
+            src="/images/TAD.jpg" // Replace with the actual image path
+            alt="Miss Tawonameso"
+            className="h-12 w-12 rounded-full mr-4"
+          />
+          <div>
+            <h4 className="font-bold">Miss Tawonameso</h4>
+            <p className="text-gray-600 text-sm">Regular Customer</p>
+          </div>
+        </div>
+        <p className="text-gray-600">
+          "I've been using their car wash services for years. They always do an exceptional job and my car looks
+          brand new every time."
+        </p>
+      </div>
+
+      <div className="bg-white p-8 rounded-lg shadow-md">
+        <div className="flex items-center mb-4">
+          <img
+            src="/images/team-3.jpg" // Replace with the actual image path
+            alt="Renny Brown"
+            className="h-12 w-12 rounded-full mr-4"
+          />
+          <div>
+            <h4 className="font-bold">Renny Brown</h4>
+            <p className="text-gray-600 text-sm">Business Client</p>
+          </div>
+        </div>
+        <p className="text-gray-600">
+          "Their car hire service is top-notch. Professional drivers, immaculate vehicles, and always on time.
+          Perfect for our corporate events."
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
     </div>
   )
 }

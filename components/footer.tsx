@@ -22,7 +22,7 @@ export default function Footer() {
               Your trusted partner for brand new and used cars in Zimbabwe since 2005.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition duration-300">
+              <a href="https://www.facebook.com/share/1ET4pJdU1S/" className="text-gray-400 hover:text-white transition duration-300">
                 <Facebook className="h-5 w-5" />
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition duration-300">

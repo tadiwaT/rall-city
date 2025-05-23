@@ -9,7 +9,7 @@ export default function CarHirePage() {
       price: 100,
       image: "/images/toyota-cross1.jpeg",
       passengers: 3,
-      description: "Luxury toyota with professional chauffeur for business travel and airport transfers.",
+      description: "Luxury Toyota for business travel and airport transfers.",
       features: ["Leather Interior", "Climate Control", "Bottled Water", "Wi-Fi"],
     },
     {
@@ -18,9 +18,8 @@ export default function CarHirePage() {
       price: 120,
       image: "/images/land-cruiser.jpeg",
       passengers: 6,
-      description: "Spacious luxury Land Cruiser with chauffeur for group travel and special occasions.",
+      description: "Spacious luxury Land Cruiser for group travel and special occasions.",
       features: [
-        
         "Leather Interior",
         "Climate Control",
         "Bottled Water",
@@ -36,7 +35,6 @@ export default function CarHirePage() {
       passengers: 8,
       description: "Classic stretch limousine for weddings, proms, and special celebrations.",
       features: [
-
         "Luxury Interior",
         "Climate Control",
         "Complimentary Drinks",
@@ -50,7 +48,7 @@ export default function CarHirePage() {
       price: 60,
       image: "/images/RAV4.jpg",
       passengers: 12,
-      description: "Comfortable van with driver for group transportation and airport shuttles.",
+      description: "Comfortable van for group transportation and airport shuttles.",
       features: ["Comfortable Seating", "Climate Control", "Bottled Water", "Luggage Space"],
     },
   ]
@@ -63,9 +61,9 @@ export default function CarHirePage() {
           <img src="/images/carental.jpg" alt="Car Hire" className="w-full h-full object-cover" />
         </div>
         <div className="container mx-auto px-6 relative z-10">
-          <h1 className="text-5xl font-bold text-white mb-4">Chauffeur Car Hire</h1>
+          <h1 className="text-5xl font-bold text-white mb-4">Car Hire</h1>
           <p className="text-xl text-gray-200 mb-8 max-w-2xl">
-            Premium chauffeur services for special events and business needs across Zimbabwe.
+            Premium car hire services for special events and business needs across Zimbabwe.
           </p>
         </div>
       </section>
@@ -74,7 +72,7 @@ export default function CarHirePage() {
       <section className="py-8 bg-gray-100">
         <div className="container mx-auto px-6">
           <div className="bg-white p-6 rounded-lg shadow-md -mt-16 relative z-20">
-            <h2 className="text-2xl font-bold mb-4">Book Your Chauffeur Service</h2>
+            <h2 className="text-2xl font-bold mb-4">Book Your Car Hire Service</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Service Type</label>
@@ -126,9 +124,16 @@ export default function CarHirePage() {
               </div>
             </div>
             <div className="mt-4 flex justify-end">
+              <a
+                href="https://wa.me/+263772318505"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
               <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-md transition duration-300">
                 Check Availability
               </button>
+              </a>
+
             </div>
           </div>
         </div>
@@ -137,7 +142,7 @@ export default function CarHirePage() {
       {/* Available Vehicles */}
       <section className="py-16">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-8">Our Chauffeur Fleet</h2>
+          <h2 className="text-3xl font-bold mb-8">Our Car Hire Fleet</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {hireVehicles.map((vehicle) => (
@@ -196,7 +201,7 @@ export default function CarHirePage() {
       {/* Services Section */}
       <section className="py-16 bg-gray-100">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Chauffeur Services</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Our Car Hire Services</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
@@ -218,7 +223,7 @@ export default function CarHirePage() {
               </div>
               <h3 className="text-xl font-bold mb-3">Corporate Travel</h3>
               <p className="text-gray-600 mb-4">
-                Reliable transportation for business executives with professional drivers and premium vehicles.
+                Reliable transportation for business executives with premium vehicles.
               </p>
               <a href="#" className="text-green-600 font-medium flex items-center">
                 Learn More <ChevronRight className="ml-1 h-4 w-4" />
@@ -256,8 +261,7 @@ export default function CarHirePage() {
                 </div>
               </div>
               <p className="text-gray-600">
-                "The chauffeur service was impeccable. The driver was punctual, professional, and the vehicle was
-                immaculate. Perfect for my business meetings."
+                "The car hire service was impeccable. The vehicle was immaculate. Perfect for my business meetings."
               </p>
             </div>
 
@@ -270,7 +274,7 @@ export default function CarHirePage() {
                 </div>
               </div>
               <p className="text-gray-600">
-                "We hired the limousine for our wedding day and it was absolutely perfect. The driver was courteous and
+                "We hired the limousine for our wedding day and it was absolutely perfect. The vehicle was beautiful and
                 helped make our special day even more memorable."
               </p>
             </div>
@@ -295,9 +299,9 @@ export default function CarHirePage() {
       {/* Call to Action */}
       <section className="py-16 bg-green-600 text-white">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-4">Experience Premium Chauffeur Service</h2>
+          <h2 className="text-3xl font-bold mb-4">Experience Premium Car Hire Service</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Book your chauffeur-driven vehicle today for a luxurious and stress-free travel experience.
+            Book your car hire today for a luxurious and stress-free travel experience.
           </p>
           <a
                     href="https://wa.me/+263781216414"

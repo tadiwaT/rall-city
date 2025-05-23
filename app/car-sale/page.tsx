@@ -1,5 +1,7 @@
+"use client"; // Add this line at the top
 import Image from "next/image"
 import { ChevronRight } from "lucide-react"
+import { useState } from "react"
 
 export default function CarSalePage() {
   // Real car data
@@ -60,12 +62,59 @@ export default function CarSalePage() {
     },
   ]
 
+  // Filter state
+  const [make, setMake] = useState("Any Make")
+  const [model, setModel] = useState("Any Model")
+  const [priceRange, setPriceRange] = useState("Any Price")
+  const [year, setYear] = useState("Any Year")
+
+  // Type for setter function
+  const handleFilterChange = (setter: React.Dispatch<React.SetStateAction<string>>) => (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setter(e.target.value)
+  }
+
+  // Filtering cars based on filters
+  const filteredCars = cars.filter((car) => {
+    const matchesMake =
+      make === "Any Make" || car.name.toLowerCase().includes(make.toLowerCase())
+    const matchesModel =
+      model === "Any Model" || car.name.toLowerCase().includes(model.toLowerCase())
+    const matchesYear =
+      year === "Any Year" || car.year.toString() === year
+
+    let matchesPrice = true
+    if (priceRange !== "Any Price") {
+      const price = car.price
+      switch (priceRange) {
+        case "Under $10,000":
+          matchesPrice = price < 10000
+          break
+        case "$10,000 - $30,000":
+          matchesPrice = price >= 10000 && price <= 30000
+          break
+        case "$30,000 - $50,000":
+          matchesPrice = price > 30000 && price <= 50000
+          break
+        case "$50,000 - $70,000":
+          matchesPrice = price > 50000 && price <= 70000
+          break
+        case "Over $70,000":
+          matchesPrice = price > 70000
+          break
+        default:
+          matchesPrice = true
+      }
+    }
+
+    return matchesMake && matchesModel && matchesPrice && matchesYear
+  })
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[50vh] bg-gradient-to-r from-gray-900 to-gray-800 flex items-center">
         <div className="absolute inset-0 opacity-50">
-          <Image src="/images/slider1.png" alt="Car Sale" fill className="object-cover" priority />
+          <Image src="/images/carslider.jpg" alt="Car Sale" fill className="object-cover" priority />
         </div>
         <div className="container mx-auto px-6 relative z-10">
           <h1 className="text-5xl font-bold text-white mb-4">Available Vehicles</h1>
@@ -83,7 +132,11 @@ export default function CarSalePage() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Make</label>
-                <select className="w-full p-2 border border-gray-300 rounded-md">
+                <select
+                  className="w-full p-2 border border-gray-300 rounded-md"
+                  value={make}
+                  onChange={handleFilterChange(setMake)}
+                >
                   <option>Any Make</option>
                   <option>Toyota</option>
                   <option>Nissan</option>
@@ -94,7 +147,11 @@ export default function CarSalePage() {
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Model</label>
-                <select className="w-full p-2 border border-gray-300 rounded-md">
+                <select
+                  className="w-full p-2 border border-gray-300 rounded-md"
+                  value={model}
+                  onChange={handleFilterChange(setModel)}
+                >
                   <option>Any Model</option>
                   <option>Note</option>
                   <option>Cross Corolla</option>
@@ -107,7 +164,11 @@ export default function CarSalePage() {
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Price Range</label>
-                <select className="w-full p-2 border border-gray-300 rounded-md">
+                <select
+                  className="w-full p-2 border border-gray-300 rounded-md"
+                  value={priceRange}
+                  onChange={handleFilterChange(setPriceRange)}
+                >
                   <option>Any Price</option>
                   <option>Under $10,000</option>
                   <option>$10,000 - $30,000</option>
@@ -118,7 +179,11 @@ export default function CarSalePage() {
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Year</label>
-                <select className="w-full p-2 border border-gray-300 rounded-md">
+                <select
+                  className="w-full p-2 border border-gray-300 rounded-md"
+                  value={year}
+                  onChange={handleFilterChange(setYear)}
+                >
                   <option>Any Year</option>
                   <option>2023</option>
                   <option>2022</option>
@@ -203,7 +268,7 @@ export default function CarSalePage() {
           <h2 className="text-3xl font-bold mb-8">Our Inventory</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {cars.map((car) => (
+            {filteredCars.map((car) => (
               <div
                 key={car.id}
                 className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow duration-300"
@@ -235,7 +300,6 @@ export default function CarSalePage() {
                     </ul>
                   </div>
                   <div className="flex space-x-2">
-                    
                     <a
                       href="https://wa.me/263781216414"
                       target="_blank"
@@ -254,7 +318,6 @@ export default function CarSalePage() {
                         Inquire Now
                       </button>
                     </a>
-
                   </div>
                 </div>
               </div>
@@ -270,16 +333,15 @@ export default function CarSalePage() {
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Contact our team and let us help you find the perfect vehicle that meets your needs and budget.
           </p>
-          
           <a
-                      href="https://wa.me/263781216414"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-flex items-center">
-                        Contact Us <ChevronRight className="ml-2 h-5 w-5" />
-                      </button>
-            </a>
+            href="https://wa.me/263781216414"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-flex items-center">
+              Contact Us <ChevronRight className="ml-2 h-5 w-5" />
+            </button>
+          </a>
         </div>
       </section>
     </div>

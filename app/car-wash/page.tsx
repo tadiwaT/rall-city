@@ -89,7 +89,7 @@ export default function CarWashPage() {
                     </ul>
                   </div>
                   <a
-                    href="https://wa.me/263781216414"
+                    href="https://wa.me/+263781216414"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -150,73 +150,85 @@ export default function CarWashPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">Customer Reviews</h2>
+<section className="py-16">
+  <div className="container mx-auto px-6">
+    <h2 className="text-3xl font-bold text-center mb-12">Customer Reviews</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="flex items-center mb-4">
-                <div className="h-12 w-12 rounded-full bg-gray-300 mr-4"></div>
-                <div>
-                  <h4 className="font-bold">Michael Johnson</h4>
-                  <div className="flex text-yellow-400">
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                  </div>
-                </div>
-              </div>
-              <p className="text-gray-600">
-                "I've tried many car washes in town, but this one is by far the best. The attention to detail is
-                amazing, and my car always looks brand new!"
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="flex items-center mb-4">
-                <div className="h-12 w-12 rounded-full bg-gray-300 mr-4"></div>
-                <div>
-                  <h4 className="font-bold">Tadiwa Tawonameso</h4>
-                  <div className="flex text-yellow-400">
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                  </div>
-                </div>
-              </div>
-              <p className="text-gray-600">
-                "The premium wash package is worth every penny. They take their time and make sure every spot is clean.
-                Highly recommend!"
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="flex items-center mb-4">
-                <div className="h-12 w-12 rounded-full bg-gray-300 mr-4"></div>
-                <div>
-                  <h4 className="font-bold">Renny K</h4>
-                  <div className="flex text-yellow-400">
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                    <span>☆</span>
-                  </div>
-                </div>
-              </div>
-              <p className="text-gray-600">
-                "Great service and friendly staff. They were able to accommodate me without an appointment. Will
-                definitely be back!"
-              </p>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="bg-white p-8 rounded-lg shadow-md">
+        <div className="flex items-center mb-4">
+          <img
+            src="/images/team-4.jpg" // Replace with the actual image path
+            alt="Mr T. Johnson"
+            className="h-12 w-12 rounded-full mr-4"
+          />
+          <div>
+            <h4 className="font-bold">Mr T. Johnson</h4>
+            <div className="flex text-yellow-400">
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
             </div>
           </div>
         </div>
-      </section>
+        <p className="text-gray-600">
+          "I've tried many car washes in town, but this one is by far the best. The attention to detail is
+          amazing, and my car always looks brand new!"
+        </p>
+      </div>
+
+      <div className="bg-white p-8 rounded-lg shadow-md">
+        <div className="flex items-center mb-4">
+          <img
+            src="/images/TAD.jpg" // Replace with the actual image path
+            alt="Miss T. Tawonameso"
+            className="h-12 w-12 rounded-full mr-4"
+          />
+          <div>
+            <h4 className="font-bold">Miss T. Tawonameso</h4>
+            <div className="flex text-yellow-400">
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+            </div>
+          </div>
+        </div>
+        <p className="text-gray-600">
+          "The premium wash package is worth every penny. They take their time and make sure every spot is clean.
+          Highly recommend!"
+        </p>
+      </div>
+
+      <div className="bg-white p-8 rounded-lg shadow-md">
+        <div className="flex items-center mb-4">
+          <img
+            src="/images/bruce-mars.jpg" // Replace with the actual image path
+            alt="Mr M. Renny"
+            className="h-12 w-12 rounded-full mr-4"
+          />
+          <div>
+            <h4 className="font-bold">Mr M. Renny</h4>
+            <div className="flex text-yellow-400">
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>☆</span>
+            </div>
+          </div>
+        </div>
+        <p className="text-gray-600">
+          "Great service and friendly staff. They were able to accommodate me without an appointment. Will
+          definitely be back!"
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Call to Action */}
       <section className="py-16 bg-green-600 text-white">
@@ -227,7 +239,7 @@ export default function CarWashPage() {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
-                    href="https://wa.me/263781216414"
+                    href="https://wa.me/+263781216414"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
