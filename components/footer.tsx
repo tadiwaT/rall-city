@@ -28,7 +28,7 @@ export default function Footer() {
               <a href="#" className="text-gray-400 hover:text-white transition duration-300">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition duration-300">
+              <a href="https://www.instagram.com/rallcity_autos?igsh=YXZsdTl1MGJnd3Vv&utm_source=qr" className="text-gray-400 hover:text-white transition duration-300">
                 <Instagram className="h-5 w-5" />
               </a>
             </div>
